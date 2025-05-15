@@ -4,12 +4,16 @@ This project performs data analysis on COVID-19 vaccine distribution and efficie
 
 ## 📂 Project Structure
 
-- `data.csv`: Contains vaccine distribution data.
-- `1_data_loader.py`: Loads the data.
-- `2_data_cleaner.py`: Cleans the data and adds new features.
-- `3_data_visualizer.py`: Visualizes the data using bar charts.
-- `4_vaccine_efficiency.py`: Analyzes vaccine efficiency by country.
-- `5_conclusion_summary.py`: Summarizes the findings.
+covid19_vaccine_analysis/
+│
+├── data.csv # Dataset containing vaccination records
+├── 1_data_loader.py # Script to load the dataset
+├── 2_data_cleaner.py # Script to clean and preprocess the data
+├── 3_data_visualizer.py # Script to visualize the data
+├── 4_vaccine_efficiency.py # Script to analyze vaccine efficiency
+├── 5_conclusion_summary.py # Script to print final insights
+└── README.md # Project documentation
+
 
 ## 📊 Sample Data Columns
 
@@ -20,34 +24,41 @@ This project performs data analysis on COVID-19 vaccine distribution and efficie
 - Population
 - Date
 
+## 🗃️ Data Structure
+
+The `data.csv` file should have the following columns:
+
+| Column Name         | Description                                      |
+|---------------------|--------------------------------------------------|
+| Country             | Name of the country                              |
+| Vaccine             | Type of vaccine used                             |
+| Doses_Administered  | Total doses of vaccine administered              |
+| Fully_Vaccinated    | Total number of people fully vaccinated          |
+| Population          | Total population of the country                  |
+| Date                | Date of data collection (YYYY-MM-DD)             |
+
 ## 📦 Requirements
 
 Install the required libraries:
 
-```bash
+```bash📌 Notes
+You can update data.csv with real-world data from trusted sources.
+
+Designed for beginners in data analytics and Python.
+
+🧠 Author
+Anuj Rasaily
+
+📧 rasaily239@gmail.com
 pip install pandas matplotlib seaborn
-```
 
-## 🚀 How to Run
+🚀 How to Run
+Make sure data.csv is in the same folder.
 
-1. Make sure `data.csv` is in the same folder.
-2. Run each script in order or run them independently as needed.
-
-```bash
+Run each script in order or run them independently as needed.
 python 1_data_loader.py
 python 2_data_cleaner.py
 python 3_data_visualizer.py
 python 4_vaccine_efficiency.py
 python 5_conclusion_summary.py
-```
 
-## 📌 Notes
-
-- You can update `data.csv` with real-world data from trusted sources.
-- Designed for beginners in data analytics and Python.
-
-## 🧠 Author
-
-- **Anuj Rasaily**
-- 📧 rasaily239@gmail.com
-- 🌐 [LinkedIn](https://www.linkedin.com/in/anuj-rasaily-8a0899322/)
